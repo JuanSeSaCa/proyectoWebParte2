@@ -1,0 +1,74 @@
+@import url(variables.css);
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+body{
+    background: var(--color-ternario);
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 4rem 2rem 2rem 3.5rem;
+
+}
+.header h2{
+    color: var(--color-primario);
+}
+
+.header nav {
+display: flex;
+flex-direction: row;
+text-decoration: none;
+
+gap: 1rem;
+}
+
+.header li, .header ul, .header a{
+    text-decoration: none;
+    
+}
+
+.header ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.header li::marker{
+    color: var(--color-ternario);
+}
+
+.header a{
+    text-decoration: none;
+    color: var(--color-secundario);
+}
+
+.container__ppal{
+    display: flex;
+    flex-direction: ;
+    flex-wrap: wrap;
+    height: calc(27.2px - 100vh);
+    
+
+}
+.img__ppal img{
+    width: 50%;
+    object-fit: contain;
+}
+ .title__card h1{
+    color: var(--color-primario);
+    font-size: xx-large;
+ }
+
+
+.container__about{
+    height: 100vh;
+}

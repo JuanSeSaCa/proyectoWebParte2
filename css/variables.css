@@ -1,8 +1,10 @@
 :root{
-    --color-primario:#33404F;
-    --color-secundario:#00DDA3;   
-    --color-ternario: #fff;
-    --color-cuarto:  #B5C5C3;
+    --color-primario:#ff702a;
+    --color-secundario: #fff;   
+    --color-ternario: #1e1d2b;
+    --color-cuarto:  #000000;
+    --color-quinto: #ffefe8; 
+    --color-sexto:#2c2b47;
 }
 
 @font-face{
