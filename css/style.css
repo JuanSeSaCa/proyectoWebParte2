@@ -27,7 +27,6 @@ body{
 display: flex;
 flex-direction: row;
 text-decoration: none;
-
 gap: 1rem;
 }
 
@@ -53,22 +52,48 @@ gap: 1rem;
 
 .container__ppal{
     display: flex;
-    flex-direction: ;
     flex-wrap: wrap;
     height: calc(27.2px - 100vh);
-    
-
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+    margin: 3rem 6rem 6rem 7rem;
 }
 .img__ppal img{
-    width: 50%;
+    width: 75%;
+    height: 75%;
     object-fit: contain;
 }
  .title__card h1{
     color: var(--color-primario);
-    font-size: xx-large;
+    font-size: 5rem;
+    margin-bottom: .7rem;
  }
-
+  .title__card p {
+    font-size: 2rem;
+    color: var(--color-secundario);
+    margin-right: 2rem;
+    margin-bottom: .7rem;
+  }
+.title__card button{
+    background: var(--color-primario);
+    color: var(--color-secundario);
+    padding: .5rem 1rem;
+    border: none;
+}
 
 .container__about{
     height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    
+}
+
+.img__about img{
+    object-fit: cover;
+    width: 75%;
+    height: 75%;
+
 }
