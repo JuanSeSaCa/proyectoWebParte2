@@ -22,7 +22,7 @@ body {
     margin: 4rem 2rem 2rem 3.5rem;
     height: 10vh;
     align-items: center;
-    width: 100%;
+    width: 95%;
     background-color: var(--color-ternario);
 
 
@@ -88,7 +88,7 @@ header nav a:hover{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "texto imagen";
+     "texto imagen";
     justify-content: center;
 }
 .img__ppal{
@@ -125,6 +125,12 @@ header nav a:hover{
     padding: .5rem 1rem;
     border: none;
 }
+
+.section__1 button:hover {
+    box-shadow: 0 0 12px var(--color-primario);
+    font-weight: bold;
+    cursor: pointer;
+}
 .section__2{
     width: 100%;
     height: 100vh;
@@ -132,10 +138,12 @@ header nav a:hover{
 
 }
 .section__2, .container__about {
-    height: 80vh;
-    width: 90vh;
+    height: 70vh;
+    width: 80vw;
     display: grid;
     flex-wrap: wrap;
+    gap: 5rem;
+    margin: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
@@ -147,6 +155,7 @@ header nav a:hover{
     width: 100%;
     height: 100%;
     grid-area: imagen;
+    overflow: hidden;
 }
 
 .section__2, .img__about img{
@@ -164,4 +173,27 @@ color: var(--color-secundario);
 
 .section__2 h2 {
     font-size: 3em;
+}
+
+.section__2 p {
+    font-size: 1.4em;
+    margin-top: 10px;
+    margin-right: 5vw;
+}
+
+.section__2 button{
+    margin-top: 2vw;
+    background-color: var(--color-primario);
+    border: none;
+    width: 20%;
+    height: 8%;
+    color: var(--color-secundario);
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+
+.section__2 button:hover {
+    box-shadow: 0 0 12px var(--color-primario);
+    font-weight: bold;
+    cursor: pointer;
 }
