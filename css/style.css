@@ -343,6 +343,7 @@ width: 30%;
     width: 100%;
     height: 90vh;
     display: flex;
+   
 
 }
 
@@ -353,4 +354,84 @@ width: 30%;
     height: 70%;
     display: flex;
     flex-direction: column;
+}
+
+.section__5 div .container__quality{
+    width: 60%;
+    height: 60%;
+    margin: auto;
+}
+
+.section__5 h2{
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 5rem 8rem 3rem 8rem;
+}
+
+.section__5 .btn{
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+}
+
+.section__5 button{
+    margin-top: 5vw;
+    margin-bottom: 1vw;
+    background-color: var(--color-primario);
+    border: none;
+    width: 10em;
+    height: 3em;
+    color: var(--color-secundario);
+    font-size: 1.1em;
+}
+
+.section__5 button:hover{
+    box-shadow: 0 0 12px var(--color-primario);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer{
+    margin-top: 10%;
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ". links1 links2 links3 links4 .";
+    color: var(--color-secundario);
+
+}
+
+.footer li{
+    list-style: none;
+}
+
+.footer__section__1{
+    grid-area: links1;
+}
+
+.footer__section__2{
+    grid-area: links2;
+}
+
+.footer__section__3{
+    grid-area: links3;
+}
+
+.footer__section__4{
+    grid-area: links4;
+}
+
+.footer i{
+    margin: 5px;
+    font-size: ;
+}
+.footer .linea{
+    height: 3px;
+    width: 3vw;
+    background-color: var(--color-primario);
+    margin: 0.5em 0 1em ;
 }
