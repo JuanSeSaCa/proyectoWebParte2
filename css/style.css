@@ -129,6 +129,7 @@ header nav a:hover{
     color: var(--color-secundario);
     padding: .5rem 1rem;
     border: none;
+    border-radius: 8px;
 }
 
 .section__1 button:hover {
@@ -198,12 +199,14 @@ margin-top: 7rem;
     color: var(--color-secundario);
     font-size: 1rem;
     margin-bottom: 50px;
+    border-radius: 8px;
 }
 
 .section__2 button:hover {
     box-shadow: 0 0 12px var(--color-primario);
     font-weight: bold;
     cursor: pointer;
+    
 }
 
 .section__3{
@@ -362,12 +365,14 @@ width: 30%;
     height: 60%;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
 }
 
 .section__5 div .container__quality{
     width: 55%;
     height: 55%;
     margin: auto;
+   
 }
 
 .section__5 h2{
@@ -392,6 +397,7 @@ width: 30%;
     height: 3em;
     color: var(--color-secundario);
     font-size: 1.1em;
+    border-radius: 8px;
 }
 
 .section__5 button:hover{
@@ -445,5 +451,103 @@ width: 30%;
 }
 
 @media (width <= 700px) {
+    body{
+        font-size: 0.6rem;
+        text-align: center;
+    }
+    header .menubtn{
+        margin-right: 18px;
+        display: flex;
+        color: var(--color-secundario);
+        background-color: var(--color-ternario);
+        border: none;
+        font-size: 2.3 rem;
+
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header .vista{
+        background-color: var(--color-sexto);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .section__1 .container__ppal{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "texto"
+        "imagen"
+        ;
+    }
     
+    .section__2 .container__about{
+        width: 80vw;
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "texto"
+        "imagen"
+        ;
+    }
+    .section__2 img{
+        height: 70%;
+        width: 70%;
+    }
+    .section__3{
+        height: 110vh;
+    }
+    
+    .section__3 .img__menu1{
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        ;
+    }
+
+    .section__4 .items__services{
+        width: 70%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+
+    .section__4 .itemss{
+        width: 100%;
+    }
+    .section__5{
+        height: 50vh;
+    }
+
+    .section__5 div {
+        height: 50%;
+    }
+
+    .section__5 div .container__services{
+        width: 100%;
+    }
+
+    .section__5 div .container__services h5{
+
+
 }
