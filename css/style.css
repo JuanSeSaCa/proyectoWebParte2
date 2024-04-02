@@ -53,7 +53,7 @@ header nav {
 
 }
 
-header .menubtn{
+header .vista{
     display: none;
 }
 
@@ -219,7 +219,7 @@ margin-top: 7rem;
     margin: auto;
     text-align: center;
     inset: 0;
-    margin-top: ;
+  
 }
 
 .section__3 h5{
@@ -441,7 +441,7 @@ width: 30%;
 
 .footer i{
     margin: 5px;
-    font-size: ;
+    
 }
 .footer .linea{
     height: 3px;
@@ -452,10 +452,10 @@ width: 30%;
 
 @media (width <= 700px) {
     body{
-        font-size: 0.6rem;
+        font-size: 10px;
         text-align: center;
     }
-    header .menubtn{
+    header .vista{
         margin-right: 18px;
         display: flex;
         color: var(--color-secundario);
@@ -469,7 +469,7 @@ width: 30%;
         display: none;
     }
 
-    header .vista{
+    header #vista .vista{
         background-color: var(--color-sexto);
         display: flex;
         flex-direction: column;
@@ -503,14 +503,20 @@ width: 30%;
         ;
     }
     .section__2 img{
-        height: 70%;
-        width: 70%;
+        height: 90%;
+        width: 90%;
+        object-fit:contain;
+        object-position: top;
+    }
+    .section__2 button{
+        width: 40%;
+        height: 13%;
     }
     .section__3{
-        height: 110vh;
+        height: 120vh;
     }
     
-    .section__3 .img__menu1{
+    .section__3 .img__menu {
         width: 60%;
         margin: auto;
         display: grid;
@@ -521,6 +527,23 @@ width: 30%;
         "img2"
         "img3"
         ;
+    }
+    .section__3 img{
+        height: 80%;
+    }
+    .section__3 .carrito{
+        width: 14%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        font-size: 25px;
+        padding-right: 2px;
+        background-color: var(--color-primario);
+        margin-left: 80%;
+        height: 10%;
+        margin-top: 5%;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 30%;
     }
 
     .section__4 .items__services{
@@ -536,18 +559,49 @@ width: 30%;
         width: 100%;
     }
     .section__5{
-        height: 50vh;
+        height: 70vh;
     }
 
     .section__5 div {
-        height: 50%;
+        height: 60%;
+        width: 90%;
+        text-align: start;
+        margin: auto;
+    }
+    .section__5 button {
+        width: 6em;
+        height: 3em;
+        font-size: 1rem;
     }
 
-    .section__5 div .container__services{
-        width: 100%;
+    /* .section__5 div, .container__quality{
+        width: 50%;
+    } */
+
+    .section__5 div, .container__quality h2{
+        font-size: 1.8em;
+        text-align: start;
     }
+    .container__quality {
+        display: flex;
+        flex-direction: column;
 
-    .section__5 div .container__services h5{
-
-
+    }
+    .footer{
+        height: 50vh;
+        width: 90%;
+    }
+    .footer {
+        text-align: start;
+        display: grid;
+        align-items: center;
+        grid-template-columns: .3fr 1fr .3fr;
+        grid-template-areas: repeat(3,1fr) .8fr;
+        grid-template-areas: 
+        ". links1 ."
+        ". links2 ."
+        ". links3 ."
+        ". links4 ."
+        ;
+    }
 }
